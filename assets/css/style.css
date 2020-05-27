@@ -2,65 +2,71 @@
     margin: 0;
     padding: 0;
   }
-  
   body {
-      color:black;
-      font-family: Georgia, 'Times New Roman', Times, serif;
-    }
+    color:black;
+    font-family:Arial, Helvetica, sans-serif;
+  }
     /* style header star */
-    header {
-      padding: 10px 0px;
-      background-color:rgb(29, 27, 27);
-    }
+  header {
+    padding: 10px 0px;
+    background-color:rgb(29, 27, 27);
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
   
-    header h1 {
+  header h1 {
       font-weight: bold;
       font-size: 34px;
       color: rgb(29, 27, 27);
       background-color:darkgray ;
       padding-left: 40px;
-      display: inline;
-    }
+      margin: 0;
+      }
   
      header a {
        text-decoration-color: darkgrey;
        color: darkgrey;
-       padding-top: 10px;
-     }
+       }
   
      header nav {
-      float: right;
-      margin: 7px 0;
+      margin-top:auto;
     }
   
-    header nav ul li {
-      display: inline;
+    header nav ul  {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
     }
   
     header nav ul li a {
-      margin:0 10px ;
-      padding:0px  15px ;
+      margin:0 10px ;      
       font-weight: lighter ;
-      font-size: 18px;
+      font-size: 1.8vw;
     }    
           /* style header end */
           /* main-*/
     .general{
     background-image: url("../images/my-picture.jpg");
-    height: 200px;
     background-size: cover;
     background-position: center;
-    position: relative;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+
     }
     .general h1{
         color: rgb(29, 27, 27);
         background-color:darkgray ;
-        font-size: 25px;        
-        padding: 0px ; /* ver por separado sus atributos*/
-        margin-top: 150px;
-        margin-left: 20px;
-        float: right;
-     }
-        
+        font-size: 25px;      
+       margin-top: 150px ;
+       width: 100%;
+       padding-right: 40px  ;
+       padding-left: 10px;
+       text-align: end;
+   }
 
+    
   

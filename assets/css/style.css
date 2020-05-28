@@ -5,6 +5,7 @@
   body {
     color:black;
     font-family:Arial, Helvetica, sans-serif;
+    background-color: rgb(208, 218, 208);
   }
     /* style header star */
   header {
@@ -58,15 +59,54 @@
 
     }
     .general h1{
-        color: rgb(29, 27, 27);
-        background-color:darkgray ;
-        font-size: 25px;      
+      color: rgb(29, 27, 27);
+      background-color:darkgray ;
+      font-size: 25px;      
        margin-top: 150px ;
        width: 100%;
        padding-right: 40px  ;
        padding-left: 10px;
        text-align: end;
    }
-
+   .flex-row {     
+      padding-top: 30px ;
+       display: flex;
+       justify-content:space-between;
+       flex-wrap: wrap;
+       width: 100%;
+     
+   }
+   .cont-row  {
+    width: 20%;    
+    margin: 0;
+    padding-right: 5px; 
+    border-right: solid 4px rgb(138, 134, 134); 
+    }
     
-  
+    .cont-row h2{
+      text-align: right;
+      color:rgb(78, 78, 107);
+      font-size: 30px;
+    }
+
+    .cont-row2{
+     width: 75%;
+     text-align: left;
+     line-height: 1.2;
+     margin: 5px 0 15px 0;
+    }   /*section about me end*/
+    /*section contact me*/
+    .elemtCont{
+      width: 75%;
+      display: flex;    
+    align-items: center;
+    list-style: none;
+    }
+    .elemtCont ul li a{
+      text-decoration-color: darkgrey;
+      color:darkgray;
+      margin:0 10px ;      
+      font-weight: lighter ;
+      font-size: 15px;
+      list-style: none;
+    }

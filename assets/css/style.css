@@ -218,6 +218,6 @@ padding-left: 10px;
     grid-row: 5 /span 2;
     grid-column: 3 /span 2;
   }
-      .work-grid-items.buddy{
+  .work-grid-items.buddy{
     background-image: url(../images/run-buddy.jpg); 
    }  

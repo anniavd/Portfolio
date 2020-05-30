@@ -106,6 +106,7 @@ padding-left: 10px;
     /*section about me end*/
 
     /*section contact me star*/
+      
     .elemtContact{
       width: 75%;
       display: flex;    
@@ -135,17 +136,18 @@ padding-left: 10px;
 
  .grid-container{
   display: flex;
-  width: 100%;
-  justify-content: center;
+  width: 75%;
+  justify-content: space-between;
+  height: 400px;
    
  }
  .work-grid-wraper{
- display: grid;
-   width: 78%;
-   grid-template-columns: repeat(7,1fr);
-   grid-template-rows: repeat(7,1fr);
+   display: grid;
+   width: 70%;
+   grid-template-columns: repeat(6,1fr);
+   grid-template-rows: repeat(6,1fr);
   /* border: 5px solid lightseagreen;*/
-  grid-gap: 20px;
+  grid-gap: 10px;
   grid-auto-flow: dense;
  }
  .work-grid-items{
@@ -154,16 +156,14 @@ padding-left: 10px;
   align-items: center;
   justify-content: center;
   text-align: center;
-  border: 5px solid darkblue;
+  border: 5px solid  lightseagreen;
   background-position: center;
   background-size: cover;  
   flex-wrap: wrap;
  }
 .work-grid-items.surf{
-  grid-column-start: 1;
-  grid-column-end: 4;
-  grid-row-start: 1;
-  grid-row-end: 5;
+  grid-column: 1 /span 4;  
+  grid-row: 1/ span 4;
  }
  .work-grid-items.surf{
    background-image: url(../images/surf-report.jpg);  
@@ -173,10 +173,31 @@ padding-left: 10px;
   /* padding: ;  pa q de espacio al backgroung   hay q refactorizar con clases despues*/
  }
  .work-grid-items.led{
-  grid-column: 4 /span 2;  
+  grid-column: 5/span 2;  
   grid-row: 1 /span 2;
  }
- .work-grid-items.calculator{
-  grid-column: 4 /span 2;
-  grid-row: 3 / span 2;  
+ .work-grid-items.led{
+  background-image: url(../images/led-wall.jpg);  
  }
+ .work-grid-items.calculator{
+  grid-column: 5 /span 2;
+  grid-row: 3 / span 2;  
+   }
+   .work-grid-items.calculator{
+    background-image: url(../images/calculator.jpg); 
+   }
+   .work-grid-items.pastel{
+    grid-row: 5 / span 2;
+    grid-column: 1 / span 2; 
+     }
+     .work-grid-items.pastel{
+      background-image: url(../images/pastel-puzzles.png); 
+     }
+
+  .work-grid-items.buddy{
+    grid-row: 5 /span 2;
+    grid-column: 3 /span 2;
+  }
+      .work-grid-items.buddy{
+    background-image: url(../images/run-buddy.jpg); 
+   }  

@@ -2,6 +2,9 @@
     margin: 0;
     padding: 0;
   }
+  *{
+    box-sizing: border-box;
+  }
   body {
     color:black;
     font-family:Arial, Helvetica, sans-serif;
@@ -17,96 +20,163 @@
   }
   
   header h1 {
-      font-weight: bold;
-      font-size: 34px;
-      color: rgb(29, 27, 27);
-      background-color:darkgray ;
-      padding-left: 40px;
-      margin: 0;
-      }
+   font-weight: bold;
+   font-size: 34px;
+   color: rgb(29, 27, 27);
+   background-color:darkgray ;     
+   padding-left: 40px;
+  margin: 0;
+  }
   
-     header a {
-       text-decoration-color: darkgrey;
-       color: darkgrey;
-       }
+  header a {
+  text-decoration-color: darkgrey;
+  color: darkgrey;
+  }
   
-     header nav {
-      margin-top:auto;
-    }
+  header nav {
+     margin-top:auto;
+  }
   
-    header nav ul  {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: center;
-    list-style: none;
-    }
+  header nav ul  {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  list-style: none;
+  }
   
-    header nav ul li a {
-      margin:0 10px ;      
-      font-weight: lighter ;
-      font-size: 1.8vw;
-    }    
-          /* style header end */
-          /* main-*/
-    .general{
-    background-image: url("../images/my-picture.jpg");
-    background-size: cover;
-    background-position: center;
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
+  header nav ul li a {
+  margin:0 10px ;      
+  font-weight: lighter ;
+  font-size: 1.8vw;
+  }    
+        /* style header end */
+      /* main-*/
+  .general{
+  background-image: url("../images/my-picture.jpg");
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
 
-    }
-    .general h1{
-      color: rgb(29, 27, 27);
-      background-color:darkgray ;
-      font-size: 25px;      
-       margin-top: 150px ;
-       width: 100%;
-       padding-right: 40px  ;
-       padding-left: 10px;
-       text-align: end;
-   }
-   .flex-row {     
-      padding-top: 30px ;
-       display: flex;
-       justify-content:space-between;
-       flex-wrap: wrap;
-       width: 100%;
-     
-   }
-   .cont-row  {
+  }
+.general h1{
+ color: rgb(29, 27, 27);
+background-color:darkgray ;
+ font-size: 25px;      
+ margin-top: 220px ;
+ width: 100%;
+ padding-right: 40px  ;
+padding-left: 10px;
+ text-align: end;
+ }
+.flex-row {     
+  padding-top: 30px ;
+  display: flex;
+  justify-content:space-between;
+  flex-wrap: wrap;
+  width: 100%;    
+ }
+
+   .cont-row {
     width: 20%;    
     margin: 0;
     padding-right: 5px; 
     border-right: solid 4px rgb(138, 134, 134); 
     }
-    
-    .cont-row h2{
+     .cont-row h2{
       text-align: right;
+      padding: 15px;
       color:rgb(78, 78, 107);
       font-size: 30px;
     }
-
     .cont-row2{
-     width: 75%;
+     width: 77%;
      text-align: left;
      line-height: 1.2;
      margin: 5px 0 15px 0;
-    }   /*section about me end*/
-    /*section contact me*/
-    .elemtCont{
+    }   
+    .cont-row2 p{
+      color:rgb(14, 14, 56);
+      padding: 15px;
+      text-align: start;
+      font-size: 18px;
+    }
+    /*section about me end*/
+
+    /*section contact me star*/
+    .elemtContact{
       width: 75%;
       display: flex;    
+      align-items:center;      
+      flex-wrap: wrap;
+      
+    }
+    .elemtContact ul{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
     align-items: center;
-    list-style: none;
-    }
-    .elemtCont ul li a{
-      text-decoration-color: darkgrey;
-      color:darkgray;
-      margin:0 10px ;      
-      font-weight: lighter ;
-      font-size: 15px;
-      list-style: none;
-    }
+    list-style: none;   
+   }
+  
+    .elemtContact ul li a{
+      text-decoration-color:rgb(78, 78, 107);
+      text-decoration-style:10 px solid;      
+      color:rgb(78, 78, 107);
+      margin:0 60px ;    
+      font-weight: bold ;
+      font-size: 18px;
+      /*font-weight: bold;*/
+      list-style: none;     
+     }
+/* section work  CSS Grid star*/
+
+ .grid-container{
+  display: flex;
+  width: 100%;
+  justify-content: center;
+   
+ }
+ .work-grid-wraper{
+ display: grid;
+   width: 78%;
+   grid-template-columns: repeat(7,1fr);
+   grid-template-rows: repeat(7,1fr);
+  /* border: 5px solid lightseagreen;*/
+  grid-gap: 20px;
+  grid-auto-flow: dense;
+ }
+ .work-grid-items{
+   padding: 10px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  border: 5px solid darkblue;
+  background-position: center;
+  background-size: cover;  
+  flex-wrap: wrap;
+ }
+.work-grid-items.surf{
+  grid-column-start: 1;
+  grid-column-end: 4;
+  grid-row-start: 1;
+  grid-row-end: 5;
+ }
+ .work-grid-items.surf{
+   background-image: url(../images/surf-report.jpg);  
+   }
+ .work-grid-items.surf h2{
+   background-color: darkgrey;
+  /* padding: ;  pa q de espacio al backgroung   hay q refactorizar con clases despues*/
+ }
+ .work-grid-items.led{
+  grid-column: 4 /span 2;  
+  grid-row: 1 /span 2;
+ }
+ .work-grid-items.calculator{
+  grid-column: 4 /span 2;
+  grid-row: 3 / span 2;  
+ }

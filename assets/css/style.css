@@ -146,6 +146,7 @@ padding-left: 10px;
    width: 70%;
    grid-template-columns: repeat(6,1fr);
    grid-template-rows: repeat(6,1fr);
+   grid-template-rows: minmax(5px ,auto);
   /* border: 5px solid lightseagreen;*/
   grid-gap: 10px;
   grid-auto-flow: dense;
@@ -154,24 +155,43 @@ padding-left: 10px;
    padding: 10px 0;
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content:first baseline;
   text-align: center;
   border: 5px solid  lightseagreen;
   background-position: center;
   background-size: cover;  
   flex-wrap: wrap;
+  
  }
 .work-grid-items.surf{
   grid-column: 1 /span 4;  
   grid-row: 1/ span 4;
  }
+ 
  .work-grid-items.surf{
-   background-image: url(../images/surf-report.jpg);  
+   background-image: url(../images/surf-report.jpg); 
+   
    }
- .work-grid-items.surf h2{
+
+   a:link {
+    text-decoration: none;
+    color:rgb(78, 78, 107)
+   }
+   .img-text {
+     margin-top: 60px;
+   }
+ .work-grid-items  h2,h3{
    background-color: darkgrey;
-  /* padding: ;  pa q de espacio al backgroung   hay q refactorizar con clases despues*/
+   /*padding:20px 0 20 px 0;*/
+   color:rgb(78, 78, 107);
+   display:flex;
  }
+   .work-grid-items  h2{
+    font-size: 25px;
+   }
+   .work-grid-items  h3{
+    font-size: 10px;
+   }
  .work-grid-items.led{
   grid-column: 5/span 2;  
   grid-row: 1 /span 2;

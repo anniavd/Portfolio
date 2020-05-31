@@ -25,7 +25,7 @@
    color: rgb(29, 27, 27);
    background-color:darkgray ;     
    padding-left: 40px;
-  margin: 0;
+   margin: 0;
   }
   
   header a {
@@ -63,13 +63,14 @@
   }
 .general h1{
  color: rgb(29, 27, 27);
-background-color:darkgray ;
+ background-color:darkgray ;
  font-size: 25px;      
- margin-top: 220px ;
- width: 100%;
- padding-right: 40px  ;
-padding-left: 10px;
- text-align: end;
+ margin-top: 200px ;
+ margin-bottom: 20px;
+ margin-left: 70%; 
+ padding-right: 10px  ;
+ padding-left: 10px;
+  
  }
 .flex-row {     
   padding-top: 30px ;
@@ -146,78 +147,125 @@ padding-left: 10px;
    width: 70%;
    grid-template-columns: repeat(6,1fr);
    grid-template-rows: repeat(6,1fr);
-   grid-template-rows: minmax(5px ,auto);
-  /* border: 5px solid lightseagreen;*/
-  grid-gap: 10px;
+   grid-template-rows: minmax(5px ,auto);  
+  grid-gap: 15px;
   grid-auto-flow: dense;
+  
  }
  .work-grid-items{
-   padding: 10px 0;
-  display: flex;
-  align-items: center;
+  /* padding: 10px 0;*/
+  display: flex; 
   justify-content:first baseline;
   text-align: center;
   border: 5px solid  lightseagreen;
   background-position: center;
-  background-size: cover;  
+  background-size: cover;    
   flex-wrap: wrap;
+  position: relative;
   
  }
 .work-grid-items.surf{
   grid-column: 1 /span 4;  
   grid-row: 1/ span 4;
  }
- 
- .work-grid-items.surf{
-   background-image: url(../images/surf-report.jpg); 
-   
-   }
-
-   a:link {
-    text-decoration: none;
-    color:rgb(78, 78, 107)
-   }
-   .img-text {
-     margin-top: 60px;
-   }
- .work-grid-items  h2,h3{
-   background-color: darkgrey;
-   /*padding:20px 0 20 px 0;*/
-   color:rgb(78, 78, 107);
-   display:flex;
- }
-   .work-grid-items  h2{
-    font-size: 25px;
-   }
-   .work-grid-items  h3{
-    font-size: 10px;
-   }
  .work-grid-items.led{
   grid-column: 5/span 2;  
   grid-row: 1 /span 2;
- }
- .work-grid-items.led{
-  background-image: url(../images/led-wall.jpg);  
  }
  .work-grid-items.calculator{
   grid-column: 5 /span 2;
   grid-row: 3 / span 2;  
    }
-   .work-grid-items.calculator{
-    background-image: url(../images/calculator.jpg); 
-   }
-   .work-grid-items.pastel{
+  .work-grid-items.pastel{
     grid-row: 5 / span 2;
     grid-column: 1 / span 2; 
-     }
-     .work-grid-items.pastel{
-      background-image: url(../images/pastel-puzzles.png); 
-     }
-
+  } 
   .work-grid-items.buddy{
     grid-row: 5 /span 2;
     grid-column: 3 /span 2;
   }
-  .work-grid-items.buddy{
-    background-image: url(../images/run-buddy.jpg); 
-   }  
+ .work-grid-items.surf{
+   background-image: url(../images/surf-report.jpg); 
+   
+ }
+     
+ .work-grid-items.led{
+  background-image: url(../images/led-wall.jpg);  
+ }
+ 
+.work-grid-items.calculator{
+   background-image: url(../images/calculator.jpg); 
+}
+  
+.work-grid-items.pastel{
+    background-image: url(../images/pastel-puzzles.png); 
+}
+
+.work-grid-items.buddy{
+  background-image: url(../images/run-buddy.jpg); 
+ }  
+  
+a:link {   
+  text-decoration: none;
+  color:rgb(78, 78, 107);
+}
+.img-text {  
+  top:60px;    
+}
+.surfposition{
+  top:190px;     
+}
+.img-text,.surfposition{
+  position:absolute;  
+}
+
+ .work-grid-items  h2,h3{
+   background-color: darkgrey;
+   /*padding:5px 10px 5px 10px;*/
+   color:rgb(78, 78, 107);
+   display:flex;
+ }
+.work-grid-items  h2{
+  font-size: 25px;
+ }
+.work-grid-items  h3{
+  font-size: 10px;
+}
+
+ .animation:hover {
+  -webkit-transform:scale(1.1);transform:scale(1.1);
+  box-shadow: 0 0 10px rgb(233, 127, 127);
+}
+
+@media screen and (max-width: 575px) {
+ 
+  .work-grid-items{
+    /*height: 680px;*/
+    /*width: 575;*/
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .img-text,.surfposition{
+    position:absolute;  
+  }
+  
+  .work-grid-items.surf{
+    grid-column: 1 /span 6;  
+    grid-row: 1/ span 4;
+   }
+  
+   .work-grid-items.calculator{
+    grid-column: 5 /span 2;
+    grid-row: 3 / span 2;  
+     }
+    .work-grid-items.led{
+      grid-row: 5 / span 2;
+      grid-column: 1 / span 2; 
+    } 
+    /*.work-grid-items.buddy{
+      grid-row: 5 /span 2;
+      grid-column: 3 /span 2;
+    }*/
+
+}

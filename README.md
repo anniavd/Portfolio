@@ -6,7 +6,7 @@ The **portfolio** is the resume of my career in one part. You can read about the
 
 
 
- ![Homepage](/assets/images/website-homepage.png)
+ ![Homepage](/assets/images/web-site.jpg)
  _____________________________________________________________________
  Visit the site! [Porfolio](https://anniavd.github.io/Horiseon/)
 

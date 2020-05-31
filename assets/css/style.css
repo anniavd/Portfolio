@@ -7,7 +7,7 @@
   }
   :root{
     --primary-color:darkgrey;
-    --secundary-color:-secundary-color;
+   --secundary-color:grey;
   }
   body {
     color:black;
@@ -32,7 +32,7 @@
    font-weight: bold;
    font-size: 34px;
    color: rgb(29, 27, 27);
-   background-color:darkgray ;     
+   background-color:gray ;     
    padding-left: 40px;
    margin: 0;
   }
@@ -60,12 +60,13 @@
   font-size: 1.8vw;
   color:rgb(78, 78, 107)
   }   
+  /*animation*/
   header nav ul li a:hover{
       text-shadow: 0 0 20px rgb(26, 219, 210);
   }
-
         /* style header end */
-      /* main-*/
+
+      /* main- section About me*/
   .general{
   background-image: url(../images/my-picture.jpg);
   background-size: cover;
@@ -77,7 +78,7 @@
   
 .general h1{
  color: rgb(29, 27, 27);
- background-color:darkgray ;
+ background-color:--primary-color ;
  font-size: 25px;      
  margin-top: 200px ;
  margin-bottom: 20px;
@@ -120,37 +121,7 @@
     }
     /*section about me end*/
 
-    /*section contact me star*/
-      
-    .elemtContact{
-      width: 75%;
-      display: flex;    
-      align-items:center;      
-      flex-wrap: wrap;
-      bottom: 30px;
-    }
-    .elemtContact ul{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: center;
-   list-style: none;  
-   }
-  
-    .elemtContact  ul li a{
-     text-decoration-color:gray;
-      text-decoration-style:10 px solid;    
-      text-decoration: underline;        
-      color:rgb(78, 78, 107);
-      margin:0 60px ;    
-      font-weight: bold ;
-      font-size: 18px;           
-     }
-
-     .elemtContact ul li a:hover{
-         text-shadow: 0 0 5px lightseagreen;
-     }
-/* section work  CSS Grid star*/
+  /* section work  CSS Grid star*/
 
  .grid-container{
   display: flex;
@@ -234,7 +205,7 @@ a:link {
 .img-text,.surfposition{
   padding-right: 5px;
   position:absolute; 
-  background-color:grey; 
+  background-color:--secundary-color; 
   color:rgb(40, 40, 43) ;
 }
 
@@ -244,7 +215,7 @@ a:link {
 .work-grid-items  h3{
   font-size: 10px;
 }
-
+      /*section work animation star*/
  .animation:hover {
   -webkit-transform:scale(1.1);transform:scale(1.1);
   box-shadow: 0 0 10px rgb(233, 127, 127);
@@ -269,7 +240,40 @@ a:link {
    position: absolute;   
    opacity: 0,2;
    transition-duration: 5s;
+}  /*section work animation end*/
+/* section work  CSS Grid end*/
+
+ /*section contact me star*/
+      
+ .elemtContact{
+  width: 75%;
+  display: flex;    
+  align-items:center;      
+  flex-wrap: wrap;
+  bottom: 30px;
 }
+.elemtContact ul{
+display: flex;
+flex-wrap: wrap;
+justify-content: space-between;
+align-items: center;
+list-style: none;  
+}
+
+.elemtContact  ul li a{
+ text-decoration-color:--secundary-color;
+  text-decoration-style:10 px solid;    
+  text-decoration: underline;        
+  color:rgb(78, 78, 107);
+  margin:0 60px ;    
+  font-weight: bold ;
+  font-size: 18px;           
+ }
+ /*section contact animation */
+ .elemtContact ul li a:hover{
+     text-shadow: 0 0 5px lightseagreen;
+ }     
+     /*section contact  end*/
 
 /*MEdiaQueries*/
 /* MEDIA QUERY FOR SMALLER DESKTOP SCREENS AND SMALLER */
@@ -296,7 +300,7 @@ a:link {
     }
     .img-text,.surfposition{
       position:absolute; 
-      background-color:grey; 
+      background-color:--secundary-color; 
        color:rgb(40, 40, 43) ;
     }
     
@@ -345,7 +349,7 @@ header nav ul li a {
 }
 .img-text,.surfposition{
   position:absolute; 
-  background-color:grey; 
+  background-color:--secundary-color; 
    color:rgb(40, 40, 43) ;
 }
 
@@ -357,7 +361,6 @@ header nav ul li a {
 }
 
 }
-
 
 @media screen and (max-width: 575px) { 
   header{

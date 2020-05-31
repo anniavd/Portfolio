@@ -7,6 +7,7 @@
   }
   :root{
     --primary-color:darkgrey;
+    --secundary-color:-secundary-color;
   }
   body {
     color:black;
@@ -37,8 +38,8 @@
   }
   
   header a {
-  text-decoration-color: darkgrey;
-  color: darkgrey;
+  text-decoration-color: --primary-color;
+  color:rgb(78, 78, 107) ;
   }
   
   header nav {
@@ -57,6 +58,7 @@
   margin:0 10px ;      
   font-weight: lighter ;
   font-size: 1.8vw;
+  color:rgb(78, 78, 107)
   }   
   header nav ul li a:hover{
       text-shadow: 0 0 20px rgb(26, 219, 210);
@@ -125,19 +127,20 @@
       display: flex;    
       align-items:center;      
       flex-wrap: wrap;
-      
+      bottom: 30px;
     }
     .elemtContact ul{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
-    list-style: none;   
+   list-style: none;  
    }
   
-    .elemtContact ul li a{
-      text-decoration-color:rgb(78, 78, 107);
-      text-decoration-style:10 px solid;      
+    .elemtContact  ul li a{
+     text-decoration-color:gray;
+      text-decoration-style:10 px solid;    
+      text-decoration: underline;        
       color:rgb(78, 78, 107);
       margin:0 60px ;    
       font-weight: bold ;
@@ -220,23 +223,21 @@
   
 a:link {   
   text-decoration: none;
-  color:rgb(78, 78, 107);
+  color:-secundary-color;
 }
-.img-text {  
-  top:55px;    
-}
+.img-text { 
+  top:55px;  
+   }
 .surfposition{
-  top:190px;     
+    top:190px;     
 }
 .img-text,.surfposition{
-  position:absolute;  
+  padding-right: 5px;
+  position:absolute; 
+  background-color:grey; 
+  color:rgb(40, 40, 43) ;
 }
 
- .work-grid-items  h2,h3{
-   background-color: darkgrey;   
-   color:rgb(78, 78, 107);
-   display:flex;
- }
 .work-grid-items  h2{
   font-size: 25px;
  }
@@ -254,19 +255,19 @@ a:link {
    content: "";
     height: 100%;
     width: 100%;
-    background: linear-gradient( rgba(121, 117, 96,0.2), rgb(240, 231, 174));
+    background: linear-gradient( rgba(189, 180, 138, 0.2), rgb(240, 231, 174));
     position: absolute;   
     opacity: 0,3;
   
 }
-.animation:hover::before{
+.animation:hover::after{
   position: absolute;
  content: "";
    height: 100%;
    width: 100%;
-   background: linear-gradient( rgba(247, 188, 139, 0.3), rgb(196, 177, 162));
+   background: linear-gradient( rgba(252, 210, 175, 0.2), rgb(177, 170, 163));
    position: absolute;   
-   opacity: 0,4;
+   opacity: 0,2;
    transition-duration: 5s;
 }
 
@@ -274,55 +275,122 @@ a:link {
 /* MEDIA QUERY FOR SMALLER DESKTOP SCREENS AND SMALLER */
 @media screen and (max-width: 980px) {/* this will be applied on any screen smaller than 980px */
   header {
-    
-    width: 100%;
+        width: 100%;
     position:relative;  
-   
-  }
+     }
   
   header h1 {
      font-size: 25px;
-        padding-left: 20px;
+      padding-left: 20px;
       margin: 0;
   }
 
   header nav ul li a {
       font-size: 3vw;
     }   
+    .img-text { 
+      top:40px;  
+       }
+    .surfposition{
+        top:160px;     
+    }
+    .img-text,.surfposition{
+      position:absolute; 
+      background-color:grey; 
+       color:rgb(40, 40, 43) ;
+    }
+    
+    .work-grid-items  h2{
+      font-size: 20px;
+     }
+    .work-grid-items  h3{
+      font-size: 10px;
+    }
 }
 
-/* MEDIA QUERY FOR TABLETS AND SMALLER */
+
 @media screen and (max-width: 768px) { /* this will be applied on any screen between 768px and 575px */
   
-   
+  header {
+    width: 100%;
+position:relative;  
+ }
+ header nav ul li a {
+  font-size: 3vw;
+}  
+ .general h1{
+   font-size:20px ;
+ }
+header h1 {
+ font-size: 25px;
+  padding-left: 20px;
+  margin: 0;
 }
 
-@media screen and (max-width: 768px) {/*para la section de services*/
+header nav ul li a {
+  font-size: 3vw;
+} 
 
- 
+.cont-row h2{
+  font-size: 22px;
 }
-@media screen and (max-width: 575px) { /*el mio*/
+.cont-row2 p{
+  font-size: 18px;
+  }
+.img-text { 
+  top:30px;  
+   }
+.surfposition{
+    top:100px;     
+}
+.img-text,.surfposition{
+  position:absolute; 
+  background-color:grey; 
+   color:rgb(40, 40, 43) ;
+}
+
+.work-grid-items  h2{
+  font-size: 16px;
+ }
+.work-grid-items  h3{
+  font-size: 8px;
+}
+
+}
+
+
+@media screen and (max-width: 575px) { 
+  header{
+    position: relative;
+  }
+  header nav ul li a {
+    font-size: 3vw;
+  }  
   .general h1{     
     font-size: 15px;
   }
   .cont-row h2{
-    font-size: 20px;
+    font-size: 15px;
   }
+  .cont-row2 p{
+  font-size: 15px;
+  }
+
+  .elemtContact  ul li a{
+     margin:0 20px ;    
+     font-weight: bold ;
+     font-size: 12px;           
+    }
   .img-text {  
-    top:20px;    
+    top:20px; 
+    bottom: 10px;   
   }
-  
-  .surfposition{
-    top:80px;     
-  }
-  /* .grid-container{
-     height: 100%;
-   }*/
+     
   .work-grid-items  h2{
-    font-size: 20px;
+    font-size: 12px;
    }
   .work-grid-items  h3{
-    font-size: 10px;
+    font-size: 5px;
   }
   .work-grid-items{ 
     height: 100%;
@@ -332,32 +400,22 @@ a:link {
      grid-column: 1;
    }
       
-      .work-grid-wraper{
-     
-     grid-template-columns: 1fr 1fr ;   
-     grid-template-rows: 1fr 1fr 1fr ;
-   }
-     
-            
-  .img-text,.surfposition{
-    position:relative;  
+   .work-grid-wraper {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
   }
-  
- .work-grid-items.surf{
-    grid-column: 1;
-   }
-  
-   .work-grid-items.calculator{
-    grid-column: 1;
-   
-     }
-    .work-grid-items.led{
-      grid-column: 1;
-    } 
-    .work-grid-items.buddy{
-      grid-column: 1;
-    }
-    .work-grid-items.pastel{
-      grid-column: 1;
-    }
+  .work-grid-items.led,
+  .work-grid-items.calculator,
+  .work-grid-items.pastel,
+  .work-grid-items.buddy
+   {
+    grid-row: span 1;
+    grid-column: span 1;
+  }
+                   
+  .img-text,.surfposition{
+    position:unset;  
+    padding-right: 0px;
+  }
+ 
   }

@@ -36,16 +36,13 @@ To access:[Contact Me](https://anniavd.github.io/Horiseon/#social-media-marketin
 To access:[Resume](https://anniavd.github.io/Horiseon/#social-media-marketing)
 The selected link information will be shown as it appears in the image below.
 
-![3 images with their respective information of each link of the site navigation]("")
+![1 images with their respective information of each link of the site navigation](/assets/images/section-about.jpg)
+![1 images with their respective information of each link of the site navigation](/assets/images/section-work1.jpg)
+![1 images with their respective information of each link of the site navigation](/assets/images/section-contact.jpg)
+
+
+
 
 __________________________________________________________________________________
-### The site shows personal information such as:
-> - My cell phone.
-> - Linkedin.
-> - Github
-> - Twitter
-> - Spotyfy.
->
-![3 image only with the text name links ](/assets/images/website-other-information.png)
 
 For more information **visit** the site clicking here:[Portfolio](https://anniavd.github.io/Horiseon/)

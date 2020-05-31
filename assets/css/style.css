@@ -117,7 +117,7 @@
       color:rgb(14, 14, 56);
       padding: 15px;
       text-align: start;
-      font-size: 18px;
+      font-size: 25px;
     }
     /*section about me end*/
 
@@ -205,7 +205,7 @@ a:link {
 .img-text,.surfposition{
   padding-right: 5px;
   position:absolute; 
-  background-color:--secundary-color; 
+  background-color:gray; 
   color:rgb(40, 40, 43) ;
 }
 
@@ -265,9 +265,9 @@ list-style: none;
   text-decoration-style:10 px solid;    
   text-decoration: underline;        
   color:rgb(78, 78, 107);
-  margin:0 60px ;    
+  margin:0 50px ;    
   font-weight: bold ;
-  font-size: 18px;           
+  font-size: 20px;           
  }
  /*section contact animation */
  .elemtContact ul li a:hover{

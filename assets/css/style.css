@@ -25,7 +25,7 @@ background: rgba(0,0,0,0.6)!important;
 }
 .navbar-dark .navbar-nav .nav-link.active ,
 .navbar-dark .navbar-nav .nav-link:hover{
-  color:#1ebba3;
+  color:#db5416;
 
 }
 
@@ -37,6 +37,11 @@ img{
   width: 100%;
 }
 
+.image{
+height: 400px;
+
+}
+
 h1{
   
   text-transform: uppercase;
@@ -44,7 +49,7 @@ h1{
   font-size: 30px;
   font-weight: bold;
   margin-top: 20px;
-  text-shadow: rgb(18, 224, 156) 2px 2px 3px;
+  text-shadow: rgb(224, 100, 18) 2px 2px 3px;
 }
 .jumbotron{
 background-color:white;

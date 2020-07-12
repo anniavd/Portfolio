@@ -10,35 +10,22 @@ The **portfolio** is the resume of my career in one part. You can read about the
  _____________________________________________________________________
  Visit the site! [Portfolio](https://anniavd.github.io/Portfolio//)
 
-____________________________
-### The web site has  3 shortcuts
 
-> 1. About Me. 
- 
-> 2. Work.
-
-> 3. Contact Me.
-
-> 4. Resume
-
-
-
- ![Image with the link of the site navigation](/assets/images/navegation.jpg)
  ______________________________________________________________
 #### To access the navigation information respectively, select one of the following links.
 
-To access:[About Me](https://anniavd.github.io/Portfolio/#about-me)
+To access:[Home](https://anniavd.github.io/Portfolio/#home)
 
-To access:[Work](https://anniavd.github.io/Portfolio/#work)
+To access:[About](https://anniavd.github.io/Portfolio/#about)
 
-To access:[Contact Me](https://anniavd.github.io/Portfolio/#contact-me)
+To access:[[Work](https://anniavd.github.io/Portfolio/#portfolio)
 
-To access:[Resume](https://anniavd.github.io/Portfolio/#resume)
+To access:[Contact](https://anniavd.github.io/Portfolio/#contact)
 
 
 The selected link information will be shown as it appears in the image below.
 
-   **ABOUT ME**
+   **ABOUT**
 
 ![1 images with their respective information of each link of the site navigation](/assets/images/section-about.jpg)
 ______________________________________________________________________________

@@ -18,14 +18,14 @@ To access:[Home](https://anniavd.github.io/Portfolio/#home)
 
 To access:[About](https://anniavd.github.io/Portfolio/#about)
 
-To access:[[Work](https://anniavd.github.io/Portfolio/#portfolio)
+To access:[Portfolio](https://anniavd.github.io/Portfolio/#portfolio)
 
 To access:[Contact](https://anniavd.github.io/Portfolio/#contact)
 
 
 The selected link information will be shown as it appears in the image below.
 
-   **ABOUT**
+ **ABOUT**
 
 ![1 images with their respective information of each link of the site navigation](/assets/images/section-about.jpg)
 ______________________________________________________________________________

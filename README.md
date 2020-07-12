@@ -34,6 +34,8 @@ To access:[Work](https://anniavd.github.io/Portfolio/#work)
 To access:[Contact Me](https://anniavd.github.io/Portfolio/#contact-me)
 
 To access:[Resume](https://anniavd.github.io/Portfolio/#resume)
+
+
 The selected link information will be shown as it appears in the image below.
 
    **ABOUT ME**

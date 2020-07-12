@@ -1,110 +1,244 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./assets/css/style.css">
-    <title>Portfolio</title>
-</head>
+    <title>Annia's Portfolio</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-<body>
-               
-    <header>  
-         <h1>  Annia Valdes  </h1> 
-        <nav>                 <!--navigation -->                           
-            <ul>                <!--Unordered list element--><!-- Anchor element -->
-                <li> <a href="#about-me">About Me</a> </li>         
-                <li> <a href="#work">Work</a></li>                  
-                <li> <a href="#contact-me">Contact Me</a></li>                  
-                <li> <a href="#resume" >Resume</a> </li>                 
-              </ul>
-        </nav>
-    </header>        
-                   
-    <main>   <!--Hero-->
-        <div class="general"> 
-            <h1> Let's work together!</h1>
-        </div>                 
-                     <!--Section about me-->
-           <section id="about-me" class="flex-row"> 
-                    <div class="cont-row">
-                      <h2>About </br> Me</h2>
-                    </div>
-                    <div class="cont-row2">
-                       <p>
-                         My name is Annia Valdes Diaz. I am a graduate in Computer Science Engineering since 2008. I have more than 5 years of experience in software development.
-                         I worked in software development projects at the University of Computer Sciences (UCI ) in Cuba.
-                         During this time I assumed the roles like a Principal System Analyst, Project Leader, Unit Test Designer for the software,control de la calidad del softwae<br><br>
-                         the activities I did were: assign tasks to the workgroup, control and review tasks. software requirements survey
-                         description of functional and non-functional requirements. Design of use cases. Unit tests for each use case of the software. Correction of non-conformities of unit tests. I have several postgraduate courses in Marketing, on mathematics.
+    <!---------Icon-------->
+    <link rel="icon" type="image/jpg" href="assets/images/portafolio.jpg" />
+    <!--Google font-->
+    <link href="https://fonts.googleapis.com/css?family=Calistoga&display=swap" rel="stylesheet">
+    <!-----FontAwesome-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+        integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <!------Bootstrap-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
 
-                       </p>                                          
-                   </div>               
-           </section>
-                       <!--Section work used CSS Grid-->
-            <section id="work" class="flex-row">  
-                <div class="cont-row" >   
-                   <h2>Work</h2> 
+    <!----------Stylesheets-->
+    <link href="assets/css/style.css" rel="stylesheet">
+
+    <!-----------Scroll-->
+
+<body data-spy="scroll" data-target="#navbar-1">
+
+    <!-----Navbar and Image-->
+    <section>
+        <div id="home">
+            <nav class="navbar navbar-expand-lg navbar-dark default-color bg-dark fixed-top">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-1"
+                    aria-controls="navbar-1" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <a class="navbar-brand" href="#">
+                    <img src="assets/images/web.png" class="logo" alt="Logo" style="width:30px;">
+                    Annia Valdes
+                </a>
+                <div class="collapse navbar-collapse" id="navbar-1">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item active ">
+                            <a class="nav-link" href="#home">Home </a>
+                        </li>
+                        <li class="nav-item active ">
+                            <a class="nav-link" href="#about">About </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#portfolio">Portfolio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#contact">Contact</a>
+                        </li>
+                    </ul>
                 </div>
-               <div class="grid-container">  
-               <div class="work-grid-wraper">   
-                  <!-- project Surf- Report--->
-               <a class="work-grid-items  animation surf" href="https://anniavd.github.io/Horiseon/">
-                     <div class="surfposition">
-                      <h2>Surf Report</h2> 
-                       <h3>MERK Stack </h3>             
-                   </div> 
-                </a>                            
-                    <!-- project Led -wall -->
-                 <a class= "work-grid-items animation led" href="https://anniavd.github.io/Horiseon/" >
-                      <div  class="img-text ">
-                         <h2> LED wall</h2>
-                         <h3>  Node/LoT</h3>                
-                       </div>
-                </a>               
-                <!-- project Calculator -->
-                <a class= "work-grid-items animation calculator" href=" https://anniavd.github.io/Horiseon/" >
-                    <div  class="img-text">
-                      <h2>  Calculator</h2>
-                       <h3> React/JavaCcript/CSS</h3>                
+            </nav>
+            <div class="home-img">
+                <img src="assets/images/ann.png">
+            </div>
+        </div>
+    </section>
+
+    <section id="content">
+        <!-----About-->
+        <div id="about" class="seccion">
+            <div class="jumbotron jumbotron-fluid">
+                <div class="container">
+                    <h1>About me</h1>
+                    <hr>
+                    </hr>
+                    <p>
+                        <br>
+                    <h4>Web developer</h4>
+
+                    <p>
+                        My name is Annia Valdes Diaz. I am a graduate in Computer Science Engineering since 2008. I have
+                        more than 5 years of experience in software development. I worked in software development
+                        projects at the University of Computer Sciences (UCI ) in Cuba.
+                        During this time I assumed the roles like a Principal System Analyst, Project Leader, Unit Test
+                        Designer for the software,control de la calidad del softwae
+                        the activities I did were: assign tasks to the workgroup, control and review tasks. software
+                        requirements survey description of functional and non-functional requirements. Design of use
+                        cases. Unit tests for each use case of the software. Correction of non-conformities of unit
+                        tests. I have several postgraduate courses in Marketing, on mathematics.
+                    </p>
+                    </head>
+
+                </div>
+            </div>
+        </div>
+
+        <!-----Portfolio-->
+
+        <div class="seccion" id="portfolio">
+            <article class="container">
+                <h1>Portfolio</h1>
+                <hr>
+                <div class="row ">
+                    <div class="col-md-4">
+                        <div class="card ">
+                            <a href="https://anniavd.github.io/post-pandemic-dating/" target="_blank">
+                                <img class="card-img-top" src="assets/images/project1.png" alt="Card image">
+                                <div class="card-body ">
+                                    <h4 class="card-title">
+                                        <a href="https://anniavd.github.io/post-pandemic-dating/" target="_blank">Post
+                                            Pandemic
+                                            Dating</a></h4>
+                                    <p class="card-text">Post Pandemic Dating is an application for people who are
+                                        planning romantic
+                                        ates in the United States of America post quarantine. The application offers the
+                                        user a quick search for information on the weather, holidays, events, and places
+                                        to eat in the city.
+                                        On top of that we offer the user a random recommended cocktail to enjoy on said
+                                        date.</p>
+                                    <br>
+                                    <p>
+                                        Technologies Used:
+                                        HTML, CSS, JavaScript, Materialize: CSS, Materialize: JS, MomentJS, jQuery,
+                                        Google fonts, Google icons, Github
+
+                                    </p>
+                                </div>
+                                <a href="https://github.com/anniavd/post-pandemic-dating" target="_blank">
+                                    <i class="fab fa-github-square fa-2x"></i>
+                                </a>
+                        </div>
+                        </a>
                     </div>
-                </a>    
-                     <!-- project  Horiseon -->
-                     <a class= "work-grid-items animation pastel" href=" https://anniavd.github.io/Horiseon/" >
-                        <div  class="img-text">
-                            <h2> Horiseon</h2>
-                           <h3> Html/CSS </h3>                
+                    
+                    <div class="col-md-4">
+                        <a href="https://anniavd.github.io/weather-dashboard/" target="_blank">
+                            <div class="card">
+                                <img class="card-img-top" src="assets/images/weather.jpg" alt="Card image">
+                                <div class="card-body ">
+                                    <h4 class="card-title"><a href="https://anniavd.github.io/weather-dashboard/"
+                                            target="_blank">Weather Dashboard</a></h4>
+                                    <p class="card-text">The application shows the weather by city. It shows the weather
+                                        of the day you are in and also the one of 5 days later.
+                                        The current day shows the temperature, humidity, wind speed and UV Index</p>
+                                    <br>
+                                    <p>
+                                        Technologies Used:
+                                        HTML,  CSS, JAVASCRIPT,  Bootstrap
+                                    </p>
+                                </div>
+
+                                <a href="https://github.com/anniavd/weather-dashboard" target="_blank">
+                                    <i class="fab fa-github-square fa-2x"></i>
+                                </a>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card">
+                            <a href="https://anniavd.github.io/password-generator/" target="_blank">
+                                <img class="card-img-top" src="assets/images/password.jpg" alt="Card image">
+                                <div class="card-body ">
+                                    <h4 class="card-title">
+
+                                        <a href="https://anniavd.github.io/password-generator/" target="_blank">Password
+                                            Generator</a></h4>
+                                    <p class="card-text">The website was developed to generate random passwords,
+                                        following various criteria.where the user select which criteria to include in
+                                        the password.</p>
+                                    <p>
+                                        Technologies Used:
+                                        CSS,  HTML,  JAVASCRIPT </p>
+                                </div>
+                                <a href="https://github.com/anniavd/password-generator" target="_blank">
+                                    <i class="fab fa-github-square fa-2x"></i>
+                                </a>
                         </div>
-                    </a>    
-                         <!--  project Run-Buddy -->
-                    <a class= "work-grid-items animation buddy" href="https://anniavd.github.io/run-buddy/" >
-                        <div  class="img-text">
-                          <h2>  Run Buddy</h2>
-                          <h3>  MERK Stack </h3>                
-                        </div>
-                    </a>     
-                </div> 
-            </div>      
-            </section>       
-                 <!--Section work-->
-            <section id="contact-me" class="flex-row  contact">
-                <div class="cont-row">
-                   <h2>Contact </br>Me</h2> 
+                    </div>
                 </div>
-               <div class="elemtContact">
-                <ul>                <!--Unordered list element-->
-                    <li> <a href="#cell phone"> +1 346-314-6382</a> </li>        
-                     <li> <a href=" https://www.linkedin.com/in/annia-valdes-diaz-77b2591a8/" target="_blank" >Linkedin </a>  </li> 
-                     <li> <a href=" https://github.com/anniavd?tab=repositories" target="_blank"> Github</a> </li>
-                    <li> <a href=" https://twitter.com/i/flow/signup" target="_blank"> Twitter</a> </li>
-                    <li> <a href=" https://accounts.spotify.com/en/login?continue=https:%2F%2Fwww.spotify.com%2Fus%2Faccount%2Foverview%2F" target="_blank"> Spotify</a> </li>
-                  </ul>  
-                </div> 
-            </section>
-         </main>                    
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="card">
+                            <a href="https://anniavd.github.io/work-day-scheduler/" target="_blank">
+                                <img class="card-img-top" src="assets/images/scheduler.jpg" alt="Card image">
+                                <div class="card-body ">
+                                    <h4 class="card-title">
+
+                                        <a href="https://anniavd.github.io/work-day-scheduler/" target="_blank">Work Day Scheduler</a></h4>
+                                    <p class="card-text">Work Day Scheduler is a calendar application for hours of a day. 
+                                        The user will be able to plan their activities and save them.</p>
+                                    <p>
+                                        Technologies Used:
+                                        CSS, Bootstrap,  HTML,  JQUERY </p>
+                                </div>
+                                <a href="https://github.com/anniavd/work-day-scheduler" target="_blank">
+                                    <i class="fab fa-github-square fa-2x"></i>
+                                </a>
+                        </div>
+                    </div>
+                </div>
+
+            </article>
+        </div>
+
+        <!-----Contact-->
+        <div id="contact" class="seccion">
+            <div class="container">
+
+                <form class="col-md-4 ">
+                    <h1>Contact</h1>
+                    <div class="form-group">
+                        <label for="uname">Name:</label>
+                        <input type="text" class="form-control" id="uname" placeholder="Enter name" name="uname">
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email:</label>
+                        <input type="text" class="form-control" id="email" placeholder="Enter email" name="email">
+                    </div>
+                    <div class="form-group">
+                        <label for="msg">Message:</label>
+                        <textarea class="form-control" id="msg" placeholder="Enter message" name="msg"></textarea>
+                    </div>
+                    <button type="submit" class="btn">Send</button>
+                </form>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="container-fluid">
+            <strong>Contact Info</strong>
+            <p>346-314-xxxx</p>
+            <p>annia.valdesd@gmail.com</p>
+            <a href="https://github.com/anniavd" target="_blank">
+                <i class="fab fa-github-square fa-2x"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/annia-valdes-diaz-77b2591a8/" target="_blank">
+                <i class="fab fa-linkedin fa-2x"></i></a>
+
+        </div>
+        <!------Footer----->
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://getbootstrap.com/docs/4.1/assets/js/vendor/popper.min.js"></script>
+    <script src="https://getbootstrap.com/docs/4.1/dist/js/bootstrap.min.js"></script>
 </body>
-</html>  
-         
-            
-            
-   
+
+</html>
